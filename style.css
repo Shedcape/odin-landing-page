@@ -34,7 +34,7 @@ body {
 .logolinks {
     justify-content: space-between;
     align-items: center;
-    width:70%;
+    width:100%;
     padding-top: 15px;
     flex-wrap: nowrap;
 }
@@ -43,7 +43,7 @@ body {
     flex-wrap: nowrap;
 }
 .headercontent {
-    width: 70%;
+    width: 100%;
     justify-content: space-between;
     gap: 24px;
 }
@@ -112,6 +112,7 @@ body {
     font-weight: bolder;
     color: #1F2937;
     margin-bottom: 10px;
+    text-align: center;
 }
 .contentbox img {
     width: 175px;
@@ -163,7 +164,7 @@ body {
     height: 400px;
 }
 .calltoaction {
-    width: 60%;
+    width: 80%;
     height: 150px;
     justify-content: space-around;
     align-items: center;
@@ -172,6 +173,7 @@ body {
 }
 .calltext {
     color: #E5E7EB;
+    ;
 }
 div h3 {
     font-weight: bold;
