@@ -1,8 +1,6 @@
 body {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 100%;
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
@@ -21,6 +19,7 @@ body {
 .footer,
 .calltoactioncontent {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .header {
@@ -29,23 +28,24 @@ body {
     align-items: center;
     background-color: #1F2937;
     gap: 72px;
-    height: 375px;
+    padding: 90px;
+    padding-top: 0;
 }
 .logolinks {
     justify-content: space-between;
     align-items: center;
     width:70%;
     padding-top: 15px;
+    flex-wrap: nowrap;
 }
 .links {
     gap: 30px;
+    flex-wrap: nowrap;
 }
 .headercontent {
     width: 70%;
     justify-content: space-between;
     gap: 24px;
-    height: 200px;
-    margin-bottom: auto;
 }
 .headerlink, 
 .secondarytext {
@@ -56,6 +56,9 @@ body {
     font-size: 24px;
     color: #f9faf8;
     margin: 0px;
+    width: 84px;
+    height: 84px;
+    margin-right: auto;
 }
 
 .awesome {
@@ -74,9 +77,9 @@ body {
     color: white;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    border: 2px solid black;
-    flex: 1;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
 }
 .signup {
     align-self: flex-start;
@@ -97,8 +100,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 50px;
-    height: 400px;
-    padding-bottom: 5%;
+    padding-bottom: 50px;
 }
 .contentcontainer {
     gap: 100px;
@@ -110,6 +112,14 @@ body {
     font-weight: bolder;
     color: #1F2937;
     margin-bottom: 10px;
+}
+.contentbox img {
+    width: 175px;
+    height: 175px;
+    border-radius:15px;
+    border:4px solid #3882F6;
+    margin-bottom: 10px;
+    object-fit: cover;
 }
 .contentbox {
     flex-direction: column;
@@ -127,10 +137,10 @@ body {
 }
 .quotesection {
     background-color: #e5e7eB;
-    height: 400px;
     flex-direction:column;
     align-items: center;
     justify-content: center;
+    padding-bottom: 50px;
 }
 .quotebox {
     width: 40%;
@@ -178,6 +188,7 @@ div h3 {
     font-weight: bold;
     height: 34px;
     width: 120px;
+    cursor: pointer;
 }
 .footer {
     height: 100px;
